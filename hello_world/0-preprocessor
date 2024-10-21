@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "c VAR=$CFILE"
+export "c VAR=$CFILE"
