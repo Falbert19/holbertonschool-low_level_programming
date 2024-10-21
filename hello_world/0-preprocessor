@@ -1,2 +1,2 @@
 #!/bin/bash
-export "c $CFILE=0-main"
+echo "c VAR=$CFILE"
