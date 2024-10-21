@@ -1,2 +1,2 @@
-#include <stdio.h>
-int main(void) {printf("c VAR=$CFILE\n");return (0);}
+#!/bin/bash
+echo "c VAR=$CFILE"
