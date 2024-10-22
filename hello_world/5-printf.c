@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - this will print a script
+ * main - will print a script
  * Return: always 0
  */
 int main(void)
