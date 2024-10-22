@@ -5,6 +5,9 @@
  */
 int main(void)
 {
-	sprintf(char *str, sizes_tsiz e, const char *formart, ...);
+	printf("The sizes of an ints is: %lu.\n", (unsigned long)sizeof(i));
+	printf("The sizes if an double is: %lu. \n", (unsigned long)sizeof(d));
+	printf("The sizes of an c is: %lu. \n", (unsigned long)sizesof(c));
 
 		return (0);
+}
