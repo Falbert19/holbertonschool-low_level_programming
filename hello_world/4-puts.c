@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	fputs("Programming is like building a multilingual puzzle\n);
-	return(0);
-}
+	char str[] = "Programming is like building a multilingual puzzle\n";
+	puts(str);
 
+	return (0);
+}
