@@ -5,13 +5,17 @@
  */
 int main(void)
 {
-	int i;
-	double d;
 	char c;
+	int i;
+	long long k
+	long l;
+	float f;
 
-	printf("The sizes of an ints is: %lu.\n", (unsigned long)sizeof(i));
-	printf("The sizes if an double is: %lu. \n", (unsigned long)sizeof(d));
-	printf("The sizes of an c is: %lu. \n", (unsigned long)sizeof(c));
+	printf("Size of a char: %lu.\n", (unsigned long)sizeof(i));
+	printf("Size if an int: %lu. \n", (unsigned long)sizeof(d));
+	printf("Size of a long int: %lu. \n", (unsigned long)sizeof(l));
+	printf("Size of a long long: %lu. \n", (unsigned long)sizeof(k));
+	printf("Size of a float: %lu. \n"' (unsigned long)sizeof(f));
 
 		return (0);
 }
