@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - this will assign a random number to the var n each time is exe
- * Return always 0
+ * main - asign random num to variable n
+ * Return: always (Success)
+ *
  */
+
 int main(void)
 {
 	int n;
@@ -11,5 +13,17 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+		else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		prinf("%d is negative\n", n);
+	}
 	return (0);
 }
