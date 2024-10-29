@@ -20,14 +20,3 @@ void print_most_numbers(void)
 	}
 	_putchar('\n');
 }
-
-/**
- * main - result
- * Return: ALways 0
- */
-
-int main(void)
-{
-	print_most_numbers();
-	return (0);
-}
