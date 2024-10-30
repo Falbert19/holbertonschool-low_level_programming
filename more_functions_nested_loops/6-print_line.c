@@ -3,18 +3,18 @@
 
 /**
  * print_line - this program will draw a straight line
- * @n: ASCII value to _
- * Return: void
+ * @n: ASCII value to run
+ * Return: 0
  */
 
 void print_line(int n)
 {
-	for (n = 0; n++;)
+	int i;
+
+	if (n > 0)
 	{
-		_putchar(95);
+		for (i = 0; i < n; i++)
+			_putchar('_');
 	}
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
+	_putchar('\n');
 }
