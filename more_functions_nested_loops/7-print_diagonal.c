@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * print diagonal - draw a diagonal line in terminal
- * @n: ASCII value tu /
+ * print_diagonal - draw a diagonal line in terminal.
+ * @n: ASCII value tu /.
+ *
  * Return: 0
  */
 
 void print_diagonal(int n)
-
 {
 	int i, x;
 
