@@ -1,1 +1,1 @@
-In this file will have task and examples of pointers arrays and strings
+this directorie will hace more advance pointer arrays and strings tasks
