@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * _strpbrk - locates the first occu in string
@@ -9,7 +10,6 @@
  */
 
 char *_strpbrk(char *s, char *accept)
-
 {
 	int i, n;
 
