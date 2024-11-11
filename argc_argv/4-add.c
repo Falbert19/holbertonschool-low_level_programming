@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 
 		for (k = 0; k < strlen(w); k++)
 		{
-			if (w[k] < 48 || w [k] > 57)
+			if (w[k] < 48 || w[k] > 57)
 			{
 				printf("Error\n");
 				return (1);
