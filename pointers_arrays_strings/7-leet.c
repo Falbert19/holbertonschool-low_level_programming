@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * *leet
@@ -9,6 +10,8 @@
 
 char *leet(char *s)
 {
+	int i;
+
     char leet_map[256] = {0};
     leet_map['a'] = '4';
     leet_map['A'] = '4';
@@ -21,7 +24,7 @@ char *leet(char *s)
     leet_map['l'] = '1';
     leet_map['L'] = '1';
 
-    for (int i = 0; s[i] != '\0'; i++)
+    for (i = 0; s[i] != '\0'; i++)
 	{
         if (leet_map[(unsigned char)s[i]] != 0) {
             s[i] = leet_map[(unsigned char)s[i]];
@@ -30,7 +33,8 @@ char *leet(char *s)
     return s;
 }
 
-int main() {
+int main()
+{
     char str[] = "LeetCode Algorithm!";
     printf("%s\n", leet(str));
     return 0;
