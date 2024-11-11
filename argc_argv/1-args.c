@@ -4,7 +4,7 @@
 /**
  * main - prints number of args
  * @argc: argument c
- * @argb: argument v
+ * @argv: argument v
  * Return: 0
  */
 
