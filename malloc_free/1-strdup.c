@@ -11,26 +11,26 @@
 
 char *_strdup(char *str)
 {
-	int a = 0, i = 1;
+	int a = 0;
+	int i;
 	char *s;
 
 	if (str == NULL)
 		return (NULL);
 
-	while (str[i])
+	while (str[a])
 	{
-		i++;
+		a++;
 	}
 
-	s = malloc((sizeof(char) * 1) + 1);
+	s = malloc((sizeof(char) * (a + 1)));
 
 	if (s == NULL)
 		return (NULL);
 
-	while (a < i)
+	for (i = 0; i < a; i++)
 	{
-		s[a] = str[a];
-		a++;
+		s[i] = str[i];
 	}
 
 	s[a] = '\0';
