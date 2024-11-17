@@ -21,10 +21,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	while (s1[i])
 		i++;
-	while (s2[b])
-		b++;
-	if (n >= b)
-		c = i + b;
+	while (s2[a])
+		a++;
+	if (n >= a)
+		c = i + a;
 	else
 		c = i + n;
 	str = malloc(sizeof(char) * c + 1);
