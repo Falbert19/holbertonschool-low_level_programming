@@ -3,16 +3,14 @@
 #include <stdlib.h>
 
 /**
- * print_name - prints name
+ * print_name - string a str
  * @name: name to print
  * @f: function pointer
- * @char: str
  * Return: void
  */
 
 void print_name(char *name, void (*f)(char *))
 {
-
 	if (name && f)
 		f(name);
 }
