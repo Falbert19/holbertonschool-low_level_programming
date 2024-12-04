@@ -1,0 +1,1 @@
+In this directorie will cotain some excercises about linked lists, to continue learning about c language.
