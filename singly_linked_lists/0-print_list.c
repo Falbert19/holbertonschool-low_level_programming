@@ -25,7 +25,6 @@ size_t print_list(const list_t *h)
 					node_count++;
 	}
 
-	printf("-> %lu elements\n", node_count);
 	return node_count;
 }
 
