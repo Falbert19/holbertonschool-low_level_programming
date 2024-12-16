@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <errno.h>
 
 /**
  * read_textfile - reads a text file and prints it to POSIX
@@ -42,6 +43,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 	free(buffer);
 	close(fd);
+
 	if (bytes_written != bytes_read)
 		return (0);
 
