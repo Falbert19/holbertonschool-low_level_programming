@@ -1,8 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - Prints the n times table
+ * print_number - prints an integer using _putchar
+ * @n: the integer to print
+ */
+
+void print_number(int n)
+{
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+
+	if (n / 10)
+		print_number(n / 10);
+
+	_putchar('0' + (n % 10));
+}
+
+/**
+ * print_times_table - prints the n times table, starting with 0
  * @n: the number defining the size of the times table
  */
 
@@ -20,15 +38,26 @@ void print_times_table(int n)
 			product = row * col;
 
 			if (col == 0)
-				printf("%d", product);
-			else if (product < 10)
-				printf(",   %d", product);
-			else if (product < 100)
-				printf(",  %d", product);
+				print_number(product);
 			else
-				printf(", %d", product);
+			{
+				_putchar(',');
+				_putchar(' ');
+
+				if (product < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (product < 100)
+				{
+					_putchar(' ');
+				}
+
+				print_number(product);
+			}
 		}
-		printf("\n");
+		_putchar('\n');
 	}
 }
 
