@@ -15,7 +15,7 @@ int main(void)
 	{
 		next = fib1 + fib2;
 
-        if (next > 4000000)
+		if (next > 4000000)
 			break;
 
 		if (next % 2 == 0)
