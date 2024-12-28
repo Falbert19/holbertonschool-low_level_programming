@@ -1,41 +1,31 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
 
 /**
- * *leet
- * @s: char
- * Return: 0
+ * leet - encodes a string into 1337
+ * @s: the input string to be encoded
+ *
+ * Return: The encoded string
  */
 
 char *leet(char *s)
 {
+	char *ptr = s;
+	char letters[] = "aAeEoOtTlL";
+	char replacements[] = "4433007711";
 	int i;
 
-    char leet_map[256] = {0};
-    leet_map['a'] = '4';
-    leet_map['A'] = '4';
-    leet_map['e'] = '3';
-    leet_map['E'] = '3';
-    leet_map['o'] = '0';
-    leet_map['O'] = '0';
-    leet_map['t'] = '7';
-    leet_map['T'] = '7';
-    leet_map['l'] = '1';
-    leet_map['L'] = '1';
-
-    for (i = 0; s[i] != '\0'; i++)
+	while (*ptr)
 	{
-        if (leet_map[(unsigned char)s[i]] != 0) {
-            s[i] = leet_map[(unsigned char)s[i]];
-        }
-    }
-    return s;
+		for (i = 0; letters[i] != '\0'; i++)
+		{
+			if (*ptr == letters[i])
+			{
+				*ptr = replacements[i];
+				break;
+			}
+		}
+		ptr++;
+	}
+	return s;
 }
 
-int main()
-{
-    char str[] = "LeetCode Algorithm!";
-    printf("%s\n", leet(str));
-    return 0;
-}
