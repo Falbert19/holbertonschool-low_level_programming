@@ -14,9 +14,9 @@ int main(void)
 	 * - you are not allowed to use the variable a
 	 * - you are not allowed to modify the variable p
 	 * - you can only write one statement
-	 * - you are not allowed to use ,
+	 * - you are not allowed to use
 	 * - you are not allowed to code anything else than the line of expected line of code at the expected line
-	 * - do not remove anything from the initial code (not even the comments)
+	 * - do not remove anything from the initial code (not even the comment)
 	 * - and don’t change anything but the line of code you are adding (don’t change the spaces to tabs!)
 	 * - you are allowed to use the standard library
 	 */
