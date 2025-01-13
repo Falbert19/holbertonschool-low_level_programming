@@ -1,6 +1,9 @@
 #include <stdlib.h>
 #include "dog.h"
 
+int _strlength(char *str);
+char *_strcopy(char *dest, char *src);
+
 /**
  * _strlength - Calculates the length of a string
  * @str: The string whose length is to be calculated
